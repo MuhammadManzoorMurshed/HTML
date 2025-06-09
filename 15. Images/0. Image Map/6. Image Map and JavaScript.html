@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Image Maps</h2>
+  <p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+  <img src="workplace.jpg" alt="workplace" width="400px" height="380px" usemap="#workmap">
+
+  <map name="workmap">
+    <area shape="circle" coords="337, 300, 44" href="#" alt="#" onclick="mFunction()">
+  </map>
+
+  <script>
+    function mFunction()
+    {
+      alert("You clicked the coffee cup!");
+    }
+  </script>
+</body>
+</html>
