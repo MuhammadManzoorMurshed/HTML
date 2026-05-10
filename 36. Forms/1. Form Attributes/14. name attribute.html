@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script>
+    function formSubmit() {
+        document.forms["myForm"].submit();
+    }
+    </script>
+</head>
+<body>
+    <h2>The enctype Attribute</h2>
+    
+    <form action="/action_page.php" target="_blank" method="post" autocomplete="on" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" name="myForm" novalidate>
+        <label for="fn">First name:</label> <br>
+        <input type="text" id="fn" name="fn"> <br>
+        
+        <label for="ln">Last Name:</label> <br>
+        <input type="text" id="ln" name="ln"> <br>
+        
+        <label for="mail">Email: </label> <br>
+        <input type="email" id="mail" name="mail"> <br> <br>
+        
+        <input type="submit" value="Submt">
+    </form>
+    
+    <p>Notice that the JavaScript in the head section uses the name of the form to specify which form to submit. The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.</p>
+</body>
+</html>

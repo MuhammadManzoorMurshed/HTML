@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The autocomplete attribute</h2>
+    <p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+    <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+    <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+    
+    <form action="#" method="#">
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" name="fn" autocomplete="on"> <br> <br>
+        
+        <label for="ln">Last Name:</label>
+        <input type="text" id="ln" name="ln"> <br> <br>
+        
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" autocomplete="off"> <br> <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <p>Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.</p>
+    <p>The autocomplete attribute works with &lt;form&gt; and the following &lt;input&gt; types: text, search, url, tel, email, password, datepickers, range, and color.</p>
+</body>
+</html>

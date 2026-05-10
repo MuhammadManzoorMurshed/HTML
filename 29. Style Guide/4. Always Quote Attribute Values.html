@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>HTML allows attribute values without quotes.</p>
+    
+    <section>
+        <p>However, we recommend quoting attribute values, because:</p>
+        <ul>
+            <li>Developers normally quote attribute values</li>
+            <li>Quoted values are easier to read</li>
+            <li>You MUST use quotes if the value contains spaces</li>
+        </ul>
+    </section>
+    
+    <!--Good-->
+    <table class="striped">
+    
+    </table>
+    
+    <!--Bad-->
+    <table class=striped>
+    
+    </table>
+    
+    <!--Very Bad-->
+    <table class=table striped>
+    
+    </table>
+</body>
+</html>

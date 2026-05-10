@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Using "untidy" HTML code can result in JavaScript errors.</p>
+
+    <p>These two JavaScript statements will produce different results:</p>
+
+    <p id="Demo">This is paragraph 1.</p>
+    <p id="demo">This is paragraph 2.</p>
+
+    <script>
+        // Only paragraph 2 will be overwritten
+        document.getElementById("demo").innerHTML = "HELLO!";
+    </script>
+</body></html>

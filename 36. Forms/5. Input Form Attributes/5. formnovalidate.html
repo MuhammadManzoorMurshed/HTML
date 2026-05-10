@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The input formnovalidate attribute</h2>
+    <p>The input formnovalidate attribute specifies that an &lt;input&gt; element should not be validated when submitted.</p>
+    
+    <form action="#" method="#">
+        <label for="mail">Enter your email:</label> <br>
+        <input type="email" id="mail" name="mail" required> <br> <br>
+        
+        <input type="submit" value="Submit">
+        <input type="submit" formnovalidate="formnovalidate" value="Submit without Validation">
+    </form>
+    
+    <p><b>Note: </b> This attribute overrides the novalidate attribute of the &lt;form&gt; element.</p>
+    <p>The formnovalidate attribute works with the following input types: submit.</p>
+</body>
+</html>

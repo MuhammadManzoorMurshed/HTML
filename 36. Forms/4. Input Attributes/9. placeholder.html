@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>The input maxlength attribute specifies the maximum number of characters allowed in an input field. </p>
+    <p>When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.</p>
+    
+    <form action="#" method="#">
+        <label for="fn">First Name:</label> <br>
+        <input type="text" id="fn" name="fn" placeholder="Enter your first name here."> <br>
+        <label for="ln">Last Name:</label> <br>
+        <input type="text" id="ln" name="ln" placeholder="Enter your last name here."> <br>
+        <label for="phone">Phone:</label> <br>
+        <input type="tel" id="phone" name="phone" placeholder="0123-456789" pattern="[0-9]{4}-[0-9][6]"> <br> <br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" size="14" maxlength="9" placeholder="12-345-67"> <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>The placeholder attribute works with the following input types: text, search, url, tel, email, and password.</p>
+</body>
+</html>

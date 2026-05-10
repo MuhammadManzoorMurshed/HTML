@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The enctype Attribute</h2>
+    
+    <form action="/action_page.php" target="_blank" method="post" autocomplete="on" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" novalidate>
+        <label for="fn">First name:</label> <br>
+        <input type="text" id="fn" name="fn"> <br>
+        
+        <label for="ln">Last Name:</label> <br>
+        <input type="text" id="ln" name="ln"> <br>
+        
+        <label for="mail">Email: </label> <br>
+        <input type="email" id="mail" name="mail"> <br> <br>
+        
+        <input type="submit" value="Submt">
+    </form>
+    
+    <p><strong>Note: </strong>The enctype attribute can be used only if method="post".</p>
+    <p><i>"application/x-www-form-urlencoded" value of enctype attribute is default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)</i></p>
+</body>
+</html>

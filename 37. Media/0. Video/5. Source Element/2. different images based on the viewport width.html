@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>The picture element</h1>
+    <p>Resize the browser window to load different images.</p>
+
+    <picture>
+        <source srcset="img_pink_flowers.jpg" media="(min-width: 750px)">
+        <source srcset="img_white_flower.jpg" media="(min-width: 600px)">
+       
+        <img src="img_orange_flowers.jpg" alt="Flower">
+    </picture>
+</body>
+</html>

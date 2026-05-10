@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The input form attribute</h2>
+    <p>The form attribute specifies the form an input element belongs to.</p>
+    
+    <form action="#" method="#" id="form0">
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" name="fn"> <br> <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+    
+    <label for="ln">Last Name:</label>
+    <input type="text" id="ln" name="ln" form="form0">
+</body>
+</html>
